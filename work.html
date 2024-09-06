@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Personal web page of Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Your Name</title>
+    
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+
+    <header>
+        <h1>About SREELEKSHMI HS</h1>
+    </header>
+
+    <!-- Profile Picture and Link -->
+    <a href="https://github.com/Liya-Susan" target="_blank">
+        <img src="image.jpg" alt="SREE">
+    </a>
+
+    <!-- About Me Section -->
+    <section>
+        <h2>About Me</h2>
+        <p id="para">Hello! I'm Your SREELEKSHMI. I'm passionate about web development and constantly improving my skills. 
+            <br/>
+        Here are some of my strengths and weaknesses:</p>
+        <ul>
+            <li><strong>Strengths:</strong> Problem-solving, teamwork, adaptability</li>
+            <li><strong>Weaknesses:</strong> Overthinking, perfectionism</li>
+        </ul>
+    </section>
+    <br/>
+    <br/>
+
+    <!-- Bucket List Table -->
+    <section>
+        <h2>Bucket List</h2>
+        <table>
+            <tr>
+                <th>Serial Number</th>
+                <th>Items</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Skydiving</td>
+                <td>Not completed</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Travel to Korea</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Attend a Major Sports Event</td>
+                <td>Not completed</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Volunteer for a Charity</td>
+                <td>Not completed</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Learned a New Programming Language</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </section>
+   <br/>
+   <br/>
+    <!-- Media Embedding -->
+    <section>
+        <h2>Favourite Movie and Song</h2>
+        <!-- Embed YouTube Video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OcwBTwizs9s" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+    <!-- Button with JavaScript -->
+    <section>
+        <button onclick="showMessage()">Click Me</button>
+    </section>
+
+    <!-- JavaScript Code -->
+    <script>
+        function showMessage() {
+            alert("Hello, welcome to my page!");
+        }
+        const para = document.getElementById('para');
+        para.addEventListener('mouseover', function() {
+            document.body.style.backgroundColor = '#d4e157'; // Light green on hover
+        });
+
+        para.addEventListener('mouseout', function() {
+            document.body.style.backgroundColor = ''; // Reset to default background color
+        });
+    </script>
+
+    <footer>
+        <p>© 2024 SREELEKSHMI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
